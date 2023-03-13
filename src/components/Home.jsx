@@ -1,7 +1,7 @@
 const Home = () => {
   const x = 'Home';
   return (
-    <div>{x}</div>
+    <div className="w-screen h-screen">{x}</div>
   );
 };
 
