@@ -6,7 +6,7 @@ import Home from './components/Home';
 const App = () => {
   const x = 0;
   return (
-    <div id={x} className="App flex flex-col bg-neutral-900 overflow-y-hidden">
+    <div id={x} className="App flex flex-col bg-neutral-900 overflow-y-hidden h-screen">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
