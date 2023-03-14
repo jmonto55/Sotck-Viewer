@@ -1,5 +1,6 @@
 import stock from '../assets/stock.svg';
 import euronext from '../assets/euronext.svg';
+import amex from '../assets/amex.png';
 
 const Home = () => (
   <div className="z-10 w-screen text-white mt-20 px-10 mb-10 flex flex-col justify-center">
@@ -12,12 +13,16 @@ const Home = () => (
       <div className="grid grid-cols-2">
         <button className="p-10 bg-neutral-900" type="button">NYSE</button>
         <button className="p-10 bg-neutral-800" type="button">NASDAQ</button>
-        <button className="p-10 bg-neutral-800" type="button">
-          <img src={euronext} alt="euronext" className="opacity-20 w-64" />
+        <button className="p-10 bg-neutral-800 flex flex-col" type="button">
+          <img src={euronext} alt="euronext" className="m-auto opacity-20 w-64 animate-pulse-slow" />
           {' '}
           EURONEXT
         </button>
-        <button className="p-10 bg-neutral-900" type="button">AMEX</button>
+        <button className="p-10 bg-neutral-900" type="button">
+          <img src={amex} alt="euronext" className="m-auto opacity-20 w-64 animate-pulse-slow" />
+          {' '}
+          AMEX
+        </button>
         <button className="p-10 bg-neutral-900" type="button">TSX</button>
         <button className="p-10 bg-neutral-800" type="button">ETF</button>
       </div>
