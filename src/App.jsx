@@ -2,16 +2,18 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Market from './components/Market';
 import Home from './components/Home';
+import Footer from './components/Footer';
 
 const App = () => {
   const x = 0;
   return (
-    <div id={x} className="App flex flex-col bg-neutral-900 overflow-y-hidden h-screen">
+    <div id={x} className="App flex flex-col bg-neutral-900">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/market" element={<Market />} />
       </Routes>
+      <Footer />
     </div>
   );
 };
