@@ -1,7 +1,7 @@
 const Market = () => {
   const x = 'Markets';
   return (
-    <div>{x}</div>
+    <div className="w-screen h-screen">{x}</div>
   );
 };
 
