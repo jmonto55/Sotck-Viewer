@@ -1,17 +1,25 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
+import { useDispatch } from 'react-redux';
+import { selectMarket } from '../redux/markets/marketsSlice';
 
 const Navbar = () => {
   const [markets, setMarkets] = useState(false);
   const [open, setOpen] = useState(false);
   const ref1 = useRef();
   const ref2 = useRef();
+  const dispatch = useDispatch();
 
   const toggleMarkets = () => {
     setMarkets(!markets);
   };
 
   const toggleOpen = () => {
+    setOpen(!open);
+  };
+
+  const changeMarket = (market) => {
+    dispatch(selectMarket(market));
     setOpen(!open);
   };
 
@@ -58,11 +66,12 @@ const Navbar = () => {
             ${markets ? 'translate-x-0 -translate-y-2' : 'translate-x-full opacity-0'} ease-in-out duration-700 md:mt-2
             backdrop-filter backdrop-blur-sm shadow-lg shadow-black`}
             >
-              <Link onClick={toggleOpen} className="mb-3 border-b hover:text-gray-400" to="/market">NYSE</Link>
-              <Link onClick={toggleOpen} className="mb-3 border-b hover:text-gray-400" to="/market">NASDAQ</Link>
-              <Link onClick={toggleOpen} className="mb-3 border-b hover:text-gray-400" to="/market">EURONEXT</Link>
-              <Link onClick={toggleOpen} className="mb-3 border-b hover:text-gray-400" to="/market">AMEX</Link>
-              <Link onClick={toggleOpen} className="mb-1 hover:text-gray-400" to="/market">TSX</Link>
+              <Link onClick={() => changeMarket('ETF')} className="mb-3 border-b hover:text-gray-400" to="/market">ETF</Link>
+              <Link onClick={() => changeMarket('NYSE')} className="mb-3 border-b hover:text-gray-400" to="/market">NYSE</Link>
+              <Link onClick={() => changeMarket('EURONEXT')} className="mb-3 border-b hover:text-gray-400" to="/market">EURONEXT</Link>
+              <Link onClick={() => changeMarket('AMEX')} className="mb-3 border-b hover:text-gray-400" to="/market">AMEX</Link>
+              <Link onClick={() => changeMarket('TSX')} className="mb-3 border-b hover:text-gray-400" to="/market">TSX</Link>
+              <Link onClick={() => changeMarket('NASDAQ')} className="mb-1 hover:text-gray-400" to="/market">NASDAQ</Link>
             </ul>
           </li>
         </ul>
