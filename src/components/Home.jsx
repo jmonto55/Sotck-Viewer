@@ -13,7 +13,7 @@ const Home = () => {
   const dispatch = useDispatch();
 
   return (
-    <div className="z-10 w-screen text-white mt-20 px-5 mb-10 flex flex-col justify-center">
+    <div className="z-10 w-screen text-white mt-24 px-5 mb-10 flex flex-col justify-center">
       <header className="m-auto max-w-screen-2xl bg-white w-full bg-opacity-10 h-48 p-2 md:p-10 rounded-lg flex justify-between items-center">
         <h2 className="animate-pulse-slow text-center md:text-2xl text-white">Welcome to Quantum Stocks</h2>
         <img src={stock} alt="stock" className="animate-pulse-slow mt-10 w-40 md:w-64" />
@@ -27,8 +27,10 @@ const Home = () => {
             type="button"
             onClick={() => dispatch(selectMarket('ETF'))}
           >
-            <span className="material-symbols-outlined absolute top-4 right-4 opacity-50 hover:scale-110">arrow_circle_right</span>
-            <img src={etf} alt="euronext" className="m-auto opacity-20 h-20 md:h-28 w-64 animate-pulse-slow" />
+            <span className="material-symbols-outlined text-base absolute top-4 right-4 opacity-50 hover:scale-110">
+              arrow_forward_ios
+            </span>
+            <img src={etf} alt="euronext" className="m-auto opacity-20 w-64 h-28 animate-pulse-slow" />
             {' '}
             ETF
           </Link>
@@ -38,7 +40,9 @@ const Home = () => {
             type="button"
             onClick={() => dispatch(selectMarket('NYSE'))}
           >
-            <span className="material-symbols-outlined absolute top-4 right-4 opacity-50 hover:scale-110">arrow_circle_right</span>
+            <span className="material-symbols-outlined text-base absolute top-4 right-4 opacity-50 hover:scale-110">
+              arrow_forward_ios
+            </span>
             <img src={nyse} alt="euronext" className="m-auto opacity-20 w-64 h-28 animate-pulse-slow" />
             {' '}
             NYSE
@@ -49,7 +53,9 @@ const Home = () => {
             type="button"
             onClick={() => dispatch(selectMarket('EURONEXT'))}
           >
-            <span className="material-symbols-outlined absolute top-4 right-4 opacity-50 hover:scale-110">arrow_circle_right</span>
+            <span className="material-symbols-outlined text-base absolute top-4 right-4 opacity-50 hover:scale-110">
+              arrow_forward_ios
+            </span>
             <img src={euronext} alt="euronext" className="m-auto opacity-20 w-64 h-28 animate-pulse-slow" />
             {' '}
             EURONEXT
@@ -60,7 +66,9 @@ const Home = () => {
             type="button"
             onClick={() => dispatch(selectMarket('AMEX'))}
           >
-            <span className="material-symbols-outlined absolute top-4 right-4 opacity-50 hover:scale-110">arrow_circle_right</span>
+            <span className="material-symbols-outlined text-base absolute top-4 right-4 opacity-50 hover:scale-110">
+              arrow_forward_ios
+            </span>
             <img src={amex} alt="euronext" className="m-auto opacity-20 h-28 animate-pulse-slow" />
             {' '}
             AMEX
@@ -71,7 +79,9 @@ const Home = () => {
             type="button"
             onClick={() => dispatch(selectMarket('TSX'))}
           >
-            <span className="material-symbols-outlined absolute top-4 right-4 opacity-50 hover:scale-110">arrow_circle_right</span>
+            <span className="material-symbols-outlined text-base absolute top-4 right-4 opacity-50 hover:scale-110">
+              arrow_forward_ios
+            </span>
             <img src={tsx} alt="euronext" className="m-auto opacity-20 h-20 md:h-28 w-64 animate-pulse-slow" />
             {' '}
             TSX
@@ -82,7 +92,9 @@ const Home = () => {
             type="button"
             onClick={() => dispatch(selectMarket('NASDAQ'))}
           >
-            <span className="material-symbols-outlined absolute top-4 right-4 opacity-50 hover:scale-110">arrow_circle_right</span>
+            <span className="material-symbols-outlined text-base absolute top-4 right-4 opacity-50 hover:scale-110">
+              arrow_forward_ios
+            </span>
             <img src={nasdaq} alt="euronext" className="m-auto w-64 h-28 animate-pulse-slow" />
             {' '}
             NASDAQ

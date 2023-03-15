@@ -13,28 +13,32 @@ const Market = () => {
 
   if (isLoading) {
     return (
-      <div className="w-screen h-screen mt-20">
-        <h1 className="text-9xl text-white">Loading...</h1>
+      <div className="opacity-50 w-screen h-screen flex flex-col justify-center items-center">
+        <div className="animate-spin border-8 border-t-transparent mb-10 border-white w-24 h-24 rounded-full" />
+        <h1 className="text-xl text-white animate-ping">Loading...</h1>
       </div>
     );
   }
   return (
-    <div className="w-screen h-full my-20">
+    <div className="w-screen h-full flex max-w-screen-2xl flex-col my-20 items-center">
       <input
         type="text"
         placeholder="Filter by company name or symbol"
-        className="w-full placeholder-shown:bg-neutral-500 p-2 focus:outline-none focus:bg-neutral-500 focus:text-white"
+        className="z-20 fixed max-w-screen-2xl pt-4 w-full placeholder-shown:bg-neutral-500 p-2 focus:outline-none focus:bg-neutral-500 focus:text-white"
         onChange={(e) => dispatch(filterStocks(e.target.value))}
       />
-      <ul className="grid grid-cols-2">
+      <ul className="z-10 w-full grid grid-cols-2 mt-16">
         {filteredList.map((stock) => (
-          <li className="text-white bg-every-1st-child" key={uuidv4()}>
-            <h2>{stock.companyName}</h2>
+          <li className="h-32 shadow-[0_4px_8px_rgba(0,0,0,0.5)] cursor-pointer hover:scale-y-105 text-center text-white p-3 flex flex-col justify-between" key={uuidv4()}>
+            <span className="material-symbols-outlined text-base absolute top-4 right-4 opacity-50 hover:scale-110">
+              arrow_forward_ios
+            </span>
             <h2 className="text-4xl">{stock.symbol}</h2>
-            <p>
+            <p className="text-left">
               <span>$</span>
-              {stock.price}
+              {stock.price || 125.0}
             </p>
+            <h2 className="text-left text-sm">{stock.companyName}</h2>
           </li>
         ))}
       </ul>

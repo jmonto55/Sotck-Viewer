@@ -37,7 +37,7 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-center">
-      <nav className="z-20 bg-neutral-900 fixed flex w-full max-w-screen-2xl justify-between px-8 md:px-24 py-5 m-auto text-neutral-100">
+      <nav className="z-30 bg-neutral-900 fixed flex w-full max-w-screen-2xl justify-between px-8 md:px-24 py-7 m-auto text-neutral-100">
         <Link className="text-xl md:text-2xl" to="/">
           Quantum
           <span className="font-bold">Stocks💱</span>

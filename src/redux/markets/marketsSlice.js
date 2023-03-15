@@ -10,7 +10,7 @@ const initialState = {
 
 export const fetchStocks = createAsyncThunk('markets/fetchStocks',
   async (market) => {
-    const URL = `https://financialmodelingprep.com/api/v3/stock-screener?marketCapLowerThan=100000000000000&exchange=${market}&limit=200&apikey=940ff5e9458d7307aae74af32f03bcfb`;
+    const URL = `https://financialmodelingprep.com/api/v3/stock-screener?marketCapLowerThan=100000000000000&exchange=${market}&limit=200&apikey=8024b4dd209dccf97c32c88c481f8ad6`;
     const resp = await axios(URL);
     return resp.data;
   });
