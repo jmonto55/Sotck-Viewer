@@ -1,34 +1,45 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const nasdaqURL = 'https://financialmodelingprep.com/api/v3/stock-screener?marketCapLowerThan=10000000000000&betaMoreThan=1&volumeMoreThan=100&exchange=NASDAQ&apikey=940ff5e9458d7307aae74af32f03bcfb';
-
 const initialState = {
   stockList: [],
   isLoading: false,
-  loaded: false,
+  market: '',
+  filteredList: [],
 };
 
 export const fetchStocks = createAsyncThunk('markets/fetchStocks',
-  async () => {
-    const resp = await axios(nasdaqURL);
+  async (market) => {
+    const URL = `https://financialmodelingprep.com/api/v3/stock-screener?marketCapLowerThan=100000000000000&exchange=${market}&limit=200&apikey=8024b4dd209dccf97c32c88c481f8ad6`;
+    const resp = await axios(URL);
     return resp.data;
   });
 
 const marketsSlice = createSlice({
   name: 'markets',
   initialState,
-  reducers: {},
+  reducers: {
+    selectMarket: (state, action) => {
+      state.market = action.payload;
+    },
+    filterStocks: (state, action) => {
+      const searchTerm = action.payload;
+      state.filteredList = state.stockList.filter((stock) => {
+        const nameMatch = stock.companyName.toLowerCase().includes(searchTerm.toLowerCase());
+        const symbolMatch = stock.symbol.toLowerCase().includes(searchTerm.toLowerCase());
+        return nameMatch || symbolMatch;
+      });
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(fetchStocks.pending, (state) => {
         state.isLoading = true;
-        state.loaded = false;
       })
       .addCase(fetchStocks.fulfilled, (state, action) => {
         state.isLoading = false;
-        state.loaded = true;
         state.stockList = action.payload;
+        state.filteredList = action.payload;
       })
       .addCase(fetchStocks.rejected, (state, action) => {
         state.isLoading = false;
@@ -37,4 +48,5 @@ const marketsSlice = createSlice({
   },
 });
 
+export const { selectMarket, filterStocks } = marketsSlice.actions;
 export default marketsSlice.reducer;
