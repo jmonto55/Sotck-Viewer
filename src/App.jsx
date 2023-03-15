@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Market from './components/Market';
 import Home from './components/Home';
 import Footer from './components/Footer';
+import Stock from './components/Stock';
 
 const App = () => {
   const x = 0;
@@ -12,6 +13,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/market" element={<Market />} />
+        <Route path="/stock" element={<Stock />} />
       </Routes>
       <Footer />
     </div>

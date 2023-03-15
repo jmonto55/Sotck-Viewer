@@ -6,6 +6,7 @@ const initialState = {
   isLoading: false,
   market: '',
   filteredList: [],
+  stock: {},
 };
 
 export const fetchStocks = createAsyncThunk('markets/fetchStocks',
@@ -21,6 +22,9 @@ const marketsSlice = createSlice({
   reducers: {
     selectMarket: (state, action) => {
       state.market = action.payload;
+    },
+    selectStock: (state, action) => {
+      state.stock = action.payload;
     },
     filterStocks: (state, action) => {
       const searchTerm = action.payload;
@@ -48,5 +52,5 @@ const marketsSlice = createSlice({
   },
 });
 
-export const { selectMarket, filterStocks } = marketsSlice.actions;
+export const { selectMarket, filterStocks, selectStock } = marketsSlice.actions;
 export default marketsSlice.reducer;

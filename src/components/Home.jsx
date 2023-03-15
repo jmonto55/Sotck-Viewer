@@ -19,7 +19,7 @@ const Home = () => {
         <img src={stock} alt="stock" className="animate-pulse-slow mt-10 w-40 md:w-64" />
       </header>
       <section className="m-auto w-full max-w-screen-2xl">
-        <h2 className="mt-10 p-5 bg-black rounded-t-lg opacity-70">Stocks by Market</h2>
+        <h2 className="mt-5 p-5 bg-black rounded-t-lg opacity-70">Stocks by Market</h2>
         <div className="grid grid-cols-2">
           <Link
             to="/market"

@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { Link } from 'react-router-dom';
-import { fetchStocks, filterStocks } from '../redux/markets/marketsSlice';
+import { fetchStocks, filterStocks, selectStock } from '../redux/markets/marketsSlice';
 import stock from '../assets/stock.svg';
 
 const Market = () => {
@@ -48,7 +48,12 @@ const Market = () => {
       />
       <ul className="z-10 w-full grid grid-cols-2 mt-6">
         {filteredList.map((stock) => (
-          <li className="h-32 shadow-[0_4px_8px_rgba(0,0,0,0.5)] cursor-pointer hover:scale-y-105 text-center text-white p-3 flex flex-col justify-between" key={uuidv4()}>
+          <Link
+            to="/stock"
+            className="h-32 shadow-[0_4px_8px_rgba(0,0,0,0.5)] cursor-pointer hover:scale-y-105 text-center text-white p-3 flex flex-col justify-between"
+            key={uuidv4()}
+            onClick={() => dispatch(selectStock(stock))}
+          >
             <span className="material-symbols-outlined text-base absolute top-4 right-4 opacity-50 hover:scale-110">
               arrow_forward_ios
             </span>
@@ -58,7 +63,7 @@ const Market = () => {
               {stock.price || 125.0}
             </p>
             <h2 className="text-left text-sm">{stock.companyName}</h2>
-          </li>
+          </Link>
         ))}
       </ul>
     </div>
