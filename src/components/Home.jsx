@@ -69,7 +69,7 @@ const Home = () => {
             <span className="material-symbols-outlined text-base absolute top-4 right-4 opacity-50 hover:scale-110">
               arrow_forward_ios
             </span>
-            <img src={amex} alt="euronext" className="m-auto opacity-20 h-28 animate-pulse-slow" />
+            <img src={amex} alt="euronext" className="m-auto opacity-60 h-28 animate-pulse-slow" />
             {' '}
             AMEX
           </Link>
@@ -95,7 +95,7 @@ const Home = () => {
             <span className="material-symbols-outlined text-base absolute top-4 right-4 opacity-50 hover:scale-110">
               arrow_forward_ios
             </span>
-            <img src={nasdaq} alt="euronext" className="m-auto w-64 h-28 animate-pulse-slow" />
+            <img src={nasdaq} alt="euronext" className="m-auto opacity-20 w-64 h-28 animate-pulse-slow" />
             {' '}
             NASDAQ
           </Link>
