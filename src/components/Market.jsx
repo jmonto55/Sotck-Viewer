@@ -34,7 +34,7 @@ const Market = () => {
         </span>
       </button>
       <header className="m-auto mt-3 max-w-screen-2xl bg-white w-full bg-opacity-10 h-48 p-2 md:py-10 md:pt-14 lg:pr-24 rounded-t-lg flex justify-between items-center relative">
-        <Link to="/" className="material-symbols-outlined text-xl cursor-pointer absolute top-4 left-4 md:top-6 md:left-6 opacity-50 hover:scale-110">
+        <Link to="/" className="text-white material-symbols-outlined text-xl cursor-pointer absolute top-4 left-4 md:top-6 md:left-6 opacity-50 hover:scale-110">
           arrow_back_ios
         </Link>
         <h2 className={`animate-pulse-slow text-center w-1/2 ${market === 'EURONEXT' || market === 'NASDAQ' ? 'text-4xl' : 'text-6xl'} md:text-6xl text-white`}>{market}</h2>
