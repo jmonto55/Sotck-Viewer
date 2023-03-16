@@ -1,8 +1,12 @@
 import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Stock = () => {
   const { stock } = useSelector((store) => store.markets);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="flex w-screen max-w-screen-2xl h-screen relative">
