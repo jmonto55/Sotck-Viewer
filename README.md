@@ -140,6 +140,10 @@ npm test
 
 - GitHub: [@jmonto55](https://github.com/jmonto55)
 
+👤 **Nelson Sakwa**
+
+- Behance: [@jmonto55](https://www.behance.net/sakwadesignstudio)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
