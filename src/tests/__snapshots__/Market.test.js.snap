@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test suite for Market component Should render a Snapshot of Market component 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="w-screen h-full flex max-w-screen-2xl flex-col my-20 items-center"
+      >
+        <button
+          class="animate-bounce-slow hover:opacity-50 shadow-[0_4px_8px_rgba(0,0,0,0.5)] bg-neutral-800 z-20 text-white flex w-12 h-12 fixed bottom-3 right-3 rounded-full"
+          type="button"
+        >
+          <span
+            class="m-auto material-symbols-outlined"
+          >
+            expand_less
+          </span>
+        </button>
+        <header
+          class="m-auto mt-3 max-w-screen-2xl bg-white w-full bg-opacity-10 h-48 p-2 md:py-10 md:pt-14 lg:pr-24 rounded-t-lg flex justify-between items-center relative"
+        >
+          <a
+            class="text-white material-symbols-outlined text-xl cursor-pointer absolute top-4 left-4 md:top-6 md:left-6 opacity-50 hover:scale-110"
+            href="/"
+          >
+            arrow_back_ios
+          </a>
+          <h2
+            class="animate-pulse-slow text-center w-1/2 text-6xl md:text-6xl text-white"
+          />
+          <img
+            alt="stock"
+            class="md:mr-20 animate-pulse-slow mt-10 w-40 md:w-64"
+            src="stock.svg"
+          />
+        </header>
+        <input
+          class="z-20 max-w-screen-2xl pt-4 w-full placeholder-shown:bg-neutral-500 p-2 focus:outline-none focus:bg-neutral-500 focus:text-white"
+          placeholder="Filter by company name or symbol"
+          type="text"
+        />
+        <ul
+          class="z-10 w-full grid grid-cols-2 mt-6"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="w-screen h-full flex max-w-screen-2xl flex-col my-20 items-center"
+    >
+      <button
+        class="animate-bounce-slow hover:opacity-50 shadow-[0_4px_8px_rgba(0,0,0,0.5)] bg-neutral-800 z-20 text-white flex w-12 h-12 fixed bottom-3 right-3 rounded-full"
+        type="button"
+      >
+        <span
+          class="m-auto material-symbols-outlined"
+        >
+          expand_less
+        </span>
+      </button>
+      <header
+        class="m-auto mt-3 max-w-screen-2xl bg-white w-full bg-opacity-10 h-48 p-2 md:py-10 md:pt-14 lg:pr-24 rounded-t-lg flex justify-between items-center relative"
+      >
+        <a
+          class="text-white material-symbols-outlined text-xl cursor-pointer absolute top-4 left-4 md:top-6 md:left-6 opacity-50 hover:scale-110"
+          href="/"
+        >
+          arrow_back_ios
+        </a>
+        <h2
+          class="animate-pulse-slow text-center w-1/2 text-6xl md:text-6xl text-white"
+        />
+        <img
+          alt="stock"
+          class="md:mr-20 animate-pulse-slow mt-10 w-40 md:w-64"
+          src="stock.svg"
+        />
+      </header>
+      <input
+        class="z-20 max-w-screen-2xl pt-4 w-full placeholder-shown:bg-neutral-500 p-2 focus:outline-none focus:bg-neutral-500 focus:text-white"
+        placeholder="Filter by company name or symbol"
+        type="text"
+      />
+      <ul
+        class="z-10 w-full grid grid-cols-2 mt-6"
+      />
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

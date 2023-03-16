@@ -1,0 +1,342 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test suite for Home component Should render a Snapshot of Home component 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="z-10 w-screen text-white mt-24 px-5 mb-10 flex flex-col justify-center"
+      >
+        <header
+          class="m-auto max-w-screen-2xl bg-white w-full bg-opacity-10 h-48 p-2 md:p-10 rounded-lg flex justify-between items-center"
+        >
+          <h2
+            class="animate-pulse-slow text-center md:text-2xl text-white"
+          >
+            Welcome to Quantum Stocks
+          </h2>
+          <img
+            alt="stock"
+            class="animate-pulse-slow mt-10 w-40 md:w-64"
+            src="stock.svg"
+          />
+        </header>
+        <section
+          class="m-auto w-full max-w-screen-2xl"
+        >
+          <h2
+            class="mt-5 p-5 bg-black rounded-t-lg opacity-70"
+          >
+            Stocks by Market
+          </h2>
+          <div
+            class="grid grid-cols-2"
+          >
+            <a
+              class="relative p-10 bg-neutral-900 h-40 flex flex-col justify-center items-center hover:opacity-60"
+              href="/market"
+              type="button"
+            >
+              <span
+                class="material-symbols-outlined text-base absolute top-4 right-4 opacity-50 hover:scale-110"
+              >
+                arrow_forward_ios
+              </span>
+              <img
+                alt="euronext"
+                class="m-auto opacity-20 w-64 h-28 animate-pulse-slow"
+                src="etf.svg"
+              />
+               
+              ETF
+            </a>
+            <a
+              class="relative p-10 bg-neutral-800 h-40 flex flex-col justify-center items-center hover:opacity-60"
+              href="/market"
+              type="button"
+            >
+              <span
+                class="material-symbols-outlined text-base absolute top-4 right-4 opacity-50 hover:scale-110"
+              >
+                arrow_forward_ios
+              </span>
+              <img
+                alt="euronext"
+                class="m-auto opacity-20 w-64 h-28 animate-pulse-slow"
+                src="nyse.svg"
+              />
+               
+              NYSE
+            </a>
+            <a
+              class="relative p-10 bg-neutral-800 h-40 flex flex-col justify-center items-center hover:opacity-60"
+              href="/market"
+              type="button"
+            >
+              <span
+                class="material-symbols-outlined text-base absolute top-4 right-4 opacity-50 hover:scale-110"
+              >
+                arrow_forward_ios
+              </span>
+              <img
+                alt="euronext"
+                class="m-auto opacity-20 w-64 h-28 animate-pulse-slow"
+                src="euronext.svg"
+              />
+               
+              EURONEXT
+            </a>
+            <a
+              class="relative p-10 bg-neutral-900 h-40 flex flex-col justify-center items-center hover:opacity-60"
+              href="/market"
+              type="button"
+            >
+              <span
+                class="material-symbols-outlined text-base absolute top-4 right-4 opacity-50 hover:scale-110"
+              >
+                arrow_forward_ios
+              </span>
+              <img
+                alt="euronext"
+                class="m-auto opacity-60 h-28 animate-pulse-slow"
+                src="amex.png"
+              />
+               
+              AMEX
+            </a>
+            <a
+              class="relative p-10 bg-neutral-900 h-40 flex flex-col justify-center items-center hover:opacity-60"
+              href="/market"
+              type="button"
+            >
+              <span
+                class="material-symbols-outlined text-base absolute top-4 right-4 opacity-50 hover:scale-110"
+              >
+                arrow_forward_ios
+              </span>
+              <img
+                alt="euronext"
+                class="m-auto opacity-20 h-20 md:h-28 w-64 animate-pulse-slow"
+                src="tsx.svg"
+              />
+               
+              TSX
+            </a>
+            <a
+              class="relative p-10 bg-neutral-800 h-40 flex flex-col justify-center items-center hover:opacity-60"
+              href="/market"
+              type="button"
+            >
+              <span
+                class="material-symbols-outlined text-base absolute top-4 right-4 opacity-50 hover:scale-110"
+              >
+                arrow_forward_ios
+              </span>
+              <img
+                alt="euronext"
+                class="m-auto opacity-20 w-64 h-28 animate-pulse-slow"
+                src="nasdaq.svg"
+              />
+               
+              NASDAQ
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="z-10 w-screen text-white mt-24 px-5 mb-10 flex flex-col justify-center"
+    >
+      <header
+        class="m-auto max-w-screen-2xl bg-white w-full bg-opacity-10 h-48 p-2 md:p-10 rounded-lg flex justify-between items-center"
+      >
+        <h2
+          class="animate-pulse-slow text-center md:text-2xl text-white"
+        >
+          Welcome to Quantum Stocks
+        </h2>
+        <img
+          alt="stock"
+          class="animate-pulse-slow mt-10 w-40 md:w-64"
+          src="stock.svg"
+        />
+      </header>
+      <section
+        class="m-auto w-full max-w-screen-2xl"
+      >
+        <h2
+          class="mt-5 p-5 bg-black rounded-t-lg opacity-70"
+        >
+          Stocks by Market
+        </h2>
+        <div
+          class="grid grid-cols-2"
+        >
+          <a
+            class="relative p-10 bg-neutral-900 h-40 flex flex-col justify-center items-center hover:opacity-60"
+            href="/market"
+            type="button"
+          >
+            <span
+              class="material-symbols-outlined text-base absolute top-4 right-4 opacity-50 hover:scale-110"
+            >
+              arrow_forward_ios
+            </span>
+            <img
+              alt="euronext"
+              class="m-auto opacity-20 w-64 h-28 animate-pulse-slow"
+              src="etf.svg"
+            />
+             
+            ETF
+          </a>
+          <a
+            class="relative p-10 bg-neutral-800 h-40 flex flex-col justify-center items-center hover:opacity-60"
+            href="/market"
+            type="button"
+          >
+            <span
+              class="material-symbols-outlined text-base absolute top-4 right-4 opacity-50 hover:scale-110"
+            >
+              arrow_forward_ios
+            </span>
+            <img
+              alt="euronext"
+              class="m-auto opacity-20 w-64 h-28 animate-pulse-slow"
+              src="nyse.svg"
+            />
+             
+            NYSE
+          </a>
+          <a
+            class="relative p-10 bg-neutral-800 h-40 flex flex-col justify-center items-center hover:opacity-60"
+            href="/market"
+            type="button"
+          >
+            <span
+              class="material-symbols-outlined text-base absolute top-4 right-4 opacity-50 hover:scale-110"
+            >
+              arrow_forward_ios
+            </span>
+            <img
+              alt="euronext"
+              class="m-auto opacity-20 w-64 h-28 animate-pulse-slow"
+              src="euronext.svg"
+            />
+             
+            EURONEXT
+          </a>
+          <a
+            class="relative p-10 bg-neutral-900 h-40 flex flex-col justify-center items-center hover:opacity-60"
+            href="/market"
+            type="button"
+          >
+            <span
+              class="material-symbols-outlined text-base absolute top-4 right-4 opacity-50 hover:scale-110"
+            >
+              arrow_forward_ios
+            </span>
+            <img
+              alt="euronext"
+              class="m-auto opacity-60 h-28 animate-pulse-slow"
+              src="amex.png"
+            />
+             
+            AMEX
+          </a>
+          <a
+            class="relative p-10 bg-neutral-900 h-40 flex flex-col justify-center items-center hover:opacity-60"
+            href="/market"
+            type="button"
+          >
+            <span
+              class="material-symbols-outlined text-base absolute top-4 right-4 opacity-50 hover:scale-110"
+            >
+              arrow_forward_ios
+            </span>
+            <img
+              alt="euronext"
+              class="m-auto opacity-20 h-20 md:h-28 w-64 animate-pulse-slow"
+              src="tsx.svg"
+            />
+             
+            TSX
+          </a>
+          <a
+            class="relative p-10 bg-neutral-800 h-40 flex flex-col justify-center items-center hover:opacity-60"
+            href="/market"
+            type="button"
+          >
+            <span
+              class="material-symbols-outlined text-base absolute top-4 right-4 opacity-50 hover:scale-110"
+            >
+              arrow_forward_ios
+            </span>
+            <img
+              alt="euronext"
+              class="m-auto opacity-20 w-64 h-28 animate-pulse-slow"
+              src="nasdaq.svg"
+            />
+             
+            NASDAQ
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
