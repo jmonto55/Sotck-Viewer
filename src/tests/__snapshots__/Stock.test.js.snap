@@ -1,0 +1,192 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test suite for Stock component Should render a Snapshot of Stock component 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="flex w-screen max-w-screen-2xl h-screen relative"
+      >
+        <div
+          class="m-auto w-3/4 h-3/4 flex"
+        >
+          <div
+            class="animate-pulse-mid z-10 h-80 w-80 md:h-96 md:w-96 bg-gradient-to-r from-neutral-700 to-neutral-900 rounded-full absolute right-20 top-0"
+          />
+          <div
+            class="pt-8 text-center flex flex-col items-center justify-evenly z-20 p-5 m-auto h-5/6 w-5/6 min-w-full bg-white bg-opacity-10 text-white rounded-2xl shadow-5xl border-2 border-b-0 border-r-0 border-white/25 backdrop-filter backdrop-blur-sm"
+          >
+            <a
+              class="material-symbols-outlined text-xl cursor-pointer absolute top-4 left-4 md:top-6 md:left-6 opacity-50 hover:scale-110"
+              href="/market"
+            >
+              arrow_back_ios
+            </a>
+            <h2
+              class="text-2xl"
+            />
+            <p
+              class="text-2xl"
+            >
+              Symbol: undefined
+            </p>
+            <p
+              class="text-2xl"
+            >
+              <span>
+                Price: $
+              </span>
+              125
+            </p>
+            <p
+              class="text-2xl"
+            >
+              <span>
+                Sector: 
+              </span>
+              Financial Services
+            </p>
+            <p
+              class="text-2xl"
+            >
+              <span>
+                Industry: 
+              </span>
+              Banks—Diversified
+            </p>
+            <p
+              class="text-2xl"
+            >
+              <span>
+                Market Cap: $ 
+              </span>
+              1258953640
+            </p>
+          </div>
+          <div
+            class="animate-pulse-mid z-10 h-80 w-80 md:h-96 md:w-96 bg-gradient-to-r from-neutral-900 to-neutral-700 rounded-full absolute left-20 bottom-6"
+          />
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="flex w-screen max-w-screen-2xl h-screen relative"
+    >
+      <div
+        class="m-auto w-3/4 h-3/4 flex"
+      >
+        <div
+          class="animate-pulse-mid z-10 h-80 w-80 md:h-96 md:w-96 bg-gradient-to-r from-neutral-700 to-neutral-900 rounded-full absolute right-20 top-0"
+        />
+        <div
+          class="pt-8 text-center flex flex-col items-center justify-evenly z-20 p-5 m-auto h-5/6 w-5/6 min-w-full bg-white bg-opacity-10 text-white rounded-2xl shadow-5xl border-2 border-b-0 border-r-0 border-white/25 backdrop-filter backdrop-blur-sm"
+        >
+          <a
+            class="material-symbols-outlined text-xl cursor-pointer absolute top-4 left-4 md:top-6 md:left-6 opacity-50 hover:scale-110"
+            href="/market"
+          >
+            arrow_back_ios
+          </a>
+          <h2
+            class="text-2xl"
+          />
+          <p
+            class="text-2xl"
+          >
+            Symbol: undefined
+          </p>
+          <p
+            class="text-2xl"
+          >
+            <span>
+              Price: $
+            </span>
+            125
+          </p>
+          <p
+            class="text-2xl"
+          >
+            <span>
+              Sector: 
+            </span>
+            Financial Services
+          </p>
+          <p
+            class="text-2xl"
+          >
+            <span>
+              Industry: 
+            </span>
+            Banks—Diversified
+          </p>
+          <p
+            class="text-2xl"
+          >
+            <span>
+              Market Cap: $ 
+            </span>
+            1258953640
+          </p>
+        </div>
+        <div
+          class="animate-pulse-mid z-10 h-80 w-80 md:h-96 md:w-96 bg-gradient-to-r from-neutral-900 to-neutral-700 rounded-full absolute left-20 bottom-6"
+        />
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
