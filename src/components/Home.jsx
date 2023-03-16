@@ -19,7 +19,7 @@ const Home = () => {
         <img src={stock} alt="stock" className="animate-pulse-slow mt-10 w-40 md:w-64" />
       </header>
       <section className="m-auto w-full max-w-screen-2xl">
-        <h2 className="mt-10 p-5 bg-black rounded-t-lg opacity-70">Stocks by Market</h2>
+        <h2 className="mt-5 p-5 bg-black rounded-t-lg opacity-70">Stocks by Market</h2>
         <div className="grid grid-cols-2">
           <Link
             to="/market"
@@ -69,7 +69,7 @@ const Home = () => {
             <span className="material-symbols-outlined text-base absolute top-4 right-4 opacity-50 hover:scale-110">
               arrow_forward_ios
             </span>
-            <img src={amex} alt="euronext" className="m-auto opacity-20 h-28 animate-pulse-slow" />
+            <img src={amex} alt="euronext" className="m-auto opacity-60 h-28 animate-pulse-slow" />
             {' '}
             AMEX
           </Link>
@@ -95,7 +95,7 @@ const Home = () => {
             <span className="material-symbols-outlined text-base absolute top-4 right-4 opacity-50 hover:scale-110">
               arrow_forward_ios
             </span>
-            <img src={nasdaq} alt="euronext" className="m-auto w-64 h-28 animate-pulse-slow" />
+            <img src={nasdaq} alt="euronext" className="m-auto opacity-20 w-64 h-28 animate-pulse-slow" />
             {' '}
             NASDAQ
           </Link>
