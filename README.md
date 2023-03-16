@@ -140,9 +140,6 @@ npm test
 
 - GitHub: [@jmonto55](https://github.com/jmonto55)
 
-👤 **Nelson Sakwa**
-
-- Behance: [@jmonto55](https://www.behance.net/sakwadesignstudio)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -176,7 +173,9 @@ If you like this project feel free to frok it and use it as you need.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for the information provided to build this project.
+I would like to thank **Nelson Sakwa** for the design
+
+- Behance: [@sakwadesignstudio](https://www.behance.net/sakwadesignstudio)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
