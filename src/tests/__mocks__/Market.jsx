@@ -1,31 +1,17 @@
-import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { Link } from 'react-router-dom';
-import { fetchStocks, filterStocks, selectStock } from '../redux/markets/marketsSlice';
-import stock from '../assets/stock.svg';
+import { filterStocks, selectStock } from '../../redux/markets/marketsSlice';
+import stock from '../../assets/stock.svg';
 
 const Market = () => {
   const dispatch = useDispatch();
-  const { filteredList, isLoading, market } = useSelector((store) => store.markets);
+  const { filteredList, market } = useSelector((store) => store.markets);
 
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  useEffect(() => {
-    dispatch(fetchStocks(market));
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, [dispatch, market]);
-
-  if (isLoading) {
-    return (
-      <div className="opacity-50 w-screen h-screen flex flex-col justify-center items-center">
-        <div className="animate-spin border-8 border-t-transparent mb-10 border-white w-24 h-24 rounded-full" />
-        <h1 className="text-xl text-white animate-ping">Loading...</h1>
-      </div>
-    );
-  }
   return (
     <div className="w-screen h-full flex max-w-screen-2xl flex-col my-20 items-center">
       <button onClick={handleScrollToTop} type="button" className="animate-bounce-slow hover:opacity-50 shadow-[0_4px_8px_rgba(0,0,0,0.5)] bg-neutral-800 z-20 text-white flex w-12 h-12 fixed bottom-3 right-3 rounded-full">

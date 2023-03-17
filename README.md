@@ -1,9 +1,9 @@
 <a name="readme-top"></a>
 
 <div align="center">
-   <h1><b>Space Traveler's Hub</b></h1>
-  <img src="./src/assets/readme1.png" alt="Awesome Meals image" width="100%" />
-  <img src="./src/assets/readme2.png" alt="Awesome Meals image" width="100%" />
+   <h1><b>Quantum Stocks</b></h1>
+  <img src="./src/assets/stocks1.png" alt="Awesome Meals image" width="45%" />
+  <img src="./src/assets/stocks2.png" alt="Awesome Meals image" width="45%" />
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -32,9 +32,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 BookStore <a name="about-project"></a>
+# 📖 Quantum Stocks <a name="about-project"></a>
 
-**Space Traveler's Hub** is a web application that displays SpaceX rockets and missions, users can join/leave missions or reserve/cancel rockets.
+**Quantum Stocks** is a web application where you can visualize detailed information about any stock traded in the six biggest markets.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -52,8 +52,7 @@
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://api.spacexdata.com/v3/missions">SpaceX Missions API</a></li>
-    <li><a href="https://api.spacexdata.com/v4/rockets">SpaceX Rockets API</a></li>
+    <li><a href="https://site.financialmodelingprep.com/developer/docs/">Financial Modeling Prep API</a></li>
   </ul>
 </details>
 
@@ -68,10 +67,10 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Users can see an updated list of SpaceX rockets and missions**
-- **Users can join or leave any mission**
-- **Users can reserve or cancel any rocket**
-- **Users can see reserved rockets and joined missions in the My Profile section**
+- **Users can filter stocks for specific market.**
+- **Users can filter stocks using name or symbol.**
+- **Users can see detailed information about any stock.**
+- **The application is fully responsive.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -79,7 +78,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](https://space-travelers-hub-27nq.onrender.com/)
+- [Live Demo](https://stock-viewer.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -103,14 +102,14 @@ To get a local copy up and running follow these simple example steps.
 Clone this repository in the desired folder:
 ```
 cd my-folder
-git clone https://github.com/jmonto55/Space-Travelers-Hub.git
+git clone https://github.com/jmonto55/Stock-Viewer.git
 ```
 
 ### Install
 
 To install this project:
 ```
-cd Space-Travelers-Hub
+cd Stock-Viewer
 code .
 npm install
 ```
@@ -137,13 +136,10 @@ npm test
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Gino Anderson Canales**
-
-- GitHub: [@anderCM](https://github.com/anderCM)
-
 👤 **Jose Montoya**
 
 - GitHub: [@jmonto55](https://github.com/jmonto55)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -177,7 +173,9 @@ If you like this project feel free to frok it and use it as you need.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for the information provided to build this project.
+I would like to thank **Nelson Sakwa** for the design
+
+- Behance: [@sakwadesignstudio](https://www.behance.net/sakwadesignstudio)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -191,7 +189,7 @@ I would like to thank Microverse for the information provided to build this proj
 
 - **Is the information saved in any database?**
 
-  - No, all data is saved in Local Storage.
+  - No, all data is fetched from API.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
