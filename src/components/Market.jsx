@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { AiOutlineStock } from 'react-icons/ai';
 import { v4 as uuidv4 } from 'uuid';
 import { Link } from 'react-router-dom';
 import { fetchStocks, filterStocks, selectStock } from '../redux/markets/marketsSlice';
-import stock from '../assets/stock.svg';
 
 const Market = () => {
   const dispatch = useDispatch();
@@ -27,30 +27,30 @@ const Market = () => {
     );
   }
   return (
-    <div className="w-screen h-full flex max-w-screen-2xl flex-col my-20 items-center">
-      <button onClick={handleScrollToTop} type="button" className="animate-bounce-slow hover:opacity-50 shadow-[0_4px_8px_rgba(0,0,0,0.5)] bg-neutral-800 z-20 text-white flex w-12 h-12 fixed bottom-3 right-3 rounded-full">
+    <div className="relative w-screen h-full flex max-w-screen-2xl flex-col my-20 items-center">
+      <button onClick={handleScrollToTop} type="button" className="animate-bounce-slow hover:opacity-50 shadow-[0_4px_8px_rgba(0,0,0,0.5)] bg-neutral-800 z-20 text-white dark:text-neutral-900 flex w-12 h-12 fixed bottom-3 right-3 rounded-full dark:bg-neutral-300">
         <span className="m-auto material-symbols-outlined">
           expand_less
         </span>
       </button>
-      <header className="m-auto mt-3 max-w-screen-2xl bg-white w-full bg-opacity-10 h-48 p-2 md:py-10 md:pt-14 lg:pr-24 rounded-t-lg flex justify-between items-center relative">
-        <Link to="/" className="text-white material-symbols-outlined text-xl cursor-pointer absolute top-4 left-4 md:top-6 md:left-6 opacity-50 hover:scale-110">
+      <header className="m-auto mt-6 max-w-screen-2xl bg-white w-full bg-opacity-10 h-48 p-2 md:py-10 md:pt-14 lg:pr-24 rounded-t-lg flex justify-evenly items-center relative dark:bg-neutral-300 dark:bg-opacity-40">
+        <Link to="/" className="text-white dark:text-neutral-900 material-symbols-outlined text-xl cursor-pointer absolute top-4 left-4 md:top-6 md:left-6 opacity-50 hover:scale-110">
           arrow_back_ios
         </Link>
-        <h2 className={`animate-pulse-slow text-center w-1/2 ${market === 'EURONEXT' || market === 'NASDAQ' ? 'text-4xl' : 'text-6xl'} md:text-6xl text-white`}>{market}</h2>
-        <img src={stock} alt="stock" className="md:mr-20 animate-pulse-slow mt-10 w-40 md:w-64" />
+        <h2 className={`animate-pulse-slow text-center w-1/2 ${market === 'EURONEXT' || market === 'NASDAQ' ? 'text-4xl' : 'text-6xl'} md:text-6xl text-white dark:text-neutral-900`}>{market}</h2>
+        <AiOutlineStock size={200} className="text-neutral-100 dark:text-neutral-800 animate-pulse-slow" />
       </header>
       <input
         type="text"
         placeholder="Filter by company name or symbol"
-        className="z-20 max-w-screen-2xl pt-4 w-full placeholder-shown:bg-neutral-500 p-2 focus:outline-none focus:bg-neutral-500 focus:text-white"
+        className="py-3 z-20 max-w-screen-2xl pt-4 w-full placeholder-shown:bg-neutral-500 p-2 focus:outline-none focus:bg-neutral-500 focus:text-white dark:text-neutral-900 dark:placeholder-neutral-900 dark:placeholder-shown:bg-neutral-300 dark:focus:bg-neutral-300"
         onChange={(e) => dispatch(filterStocks(e.target.value))}
       />
-      <ul className="z-10 w-full grid grid-cols-2 mt-6">
+      <ul className="z-10 w-full grid grid-cols-2">
         {filteredList.map((stock) => (
           <Link
             to="/stock"
-            className="h-32 shadow-[0_4px_8px_rgba(0,0,0,0.5)] cursor-pointer hover:scale-y-105 text-center text-white p-3 flex flex-col justify-between"
+            className="relative h-32 shadow-[0_4px_8px_rgba(0,0,0,0.5)] cursor-pointer hover:scale-y-105 text-center text-white p-3 flex flex-col justify-between dark:text-neutral-700"
             key={uuidv4()}
             onClick={() => dispatch(selectStock(stock))}
           >
