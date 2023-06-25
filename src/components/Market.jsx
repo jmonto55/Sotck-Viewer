@@ -27,7 +27,7 @@ const Market = () => {
     );
   }
   return (
-    <div className="w-screen h-full flex max-w-screen-2xl flex-col my-20 items-center">
+    <div className="relative w-screen h-full flex max-w-screen-2xl flex-col my-20 items-center">
       <button onClick={handleScrollToTop} type="button" className="animate-bounce-slow hover:opacity-50 shadow-[0_4px_8px_rgba(0,0,0,0.5)] bg-neutral-800 z-20 text-white dark:text-neutral-900 flex w-12 h-12 fixed bottom-3 right-3 rounded-full dark:bg-neutral-300">
         <span className="m-auto material-symbols-outlined">
           expand_less
@@ -38,7 +38,7 @@ const Market = () => {
           arrow_back_ios
         </Link>
         <h2 className={`animate-pulse-slow text-center w-1/2 ${market === 'EURONEXT' || market === 'NASDAQ' ? 'text-4xl' : 'text-6xl'} md:text-6xl text-white dark:text-neutral-900`}>{market}</h2>
-        <AiOutlineStock size={200} className="dark:text-neutral-800 animate-pulse-slow" />
+        <AiOutlineStock size={200} className="text-neutral-100 dark:text-neutral-800 animate-pulse-slow" />
       </header>
       <input
         type="text"
@@ -50,7 +50,7 @@ const Market = () => {
         {filteredList.map((stock) => (
           <Link
             to="/stock"
-            className="h-32 shadow-[0_4px_8px_rgba(0,0,0,0.5)] cursor-pointer hover:scale-y-105 text-center text-white p-3 flex flex-col justify-between dark:text-neutral-700"
+            className="relative h-32 shadow-[0_4px_8px_rgba(0,0,0,0.5)] cursor-pointer hover:scale-y-105 text-center text-white p-3 flex flex-col justify-between dark:text-neutral-700"
             key={uuidv4()}
             onClick={() => dispatch(selectStock(stock))}
           >
