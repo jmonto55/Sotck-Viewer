@@ -50,11 +50,11 @@ const Navbar = () => {
   return (
     <div className="flex justify-center">
       <nav className="shadow z-30 bg-neutral-900 dark:bg-slate-100 dark:text-slate-900 fixed flex w-full max-w-screen-2xl justify-between px-8 md:px-24 py-7 m-auto text-neutral-100">
-        <Link className="text-xl md:text-2xl" to="/">
+        <Link className="mt-2 text-xl md:text-2xl" to="/">
           Quantum
           <span className="font-bold">Stocks💱</span>
         </Link>
-        <div className="flex justify-end w-full items-center pr-5">
+        <div className="mt-1 flex justify-end w-full items-center pr-5">
           <MdDarkMode onClick={toggleTheme} className={`cursor-pointer text-lg ${!dark ? 'hidden' : 'block'}`} />
           <MdLightMode onClick={toggleTheme} className={`cursor-pointer text-lg ${dark ? 'hidden' : 'block'}`} />
         </div>
@@ -100,7 +100,7 @@ const Navbar = () => {
         )}
         {!open && (
         <button onClick={toggleOpen} type="button" className="z-10 md:hidden">
-          <span className="material-symbols-outlined">
+          <span className="material-symbols-outlined mt-2">
             menu
           </span>
         </button>
