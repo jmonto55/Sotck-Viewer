@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { AiOutlineStock } from 'react-icons/ai';
 import { v4 as uuidv4 } from 'uuid';
 import { Link } from 'react-router-dom';
 import { fetchStocks, filterStocks, selectStock } from '../redux/markets/marketsSlice';
-import stock from '../assets/stock.svg';
 
 const Market = () => {
   const dispatch = useDispatch();
@@ -33,20 +33,20 @@ const Market = () => {
           expand_less
         </span>
       </button>
-      <header className="m-auto mt-6 max-w-screen-2xl bg-white w-full bg-opacity-10 h-48 p-2 md:py-10 md:pt-14 lg:pr-24 rounded-t-lg flex justify-between items-center relative dark:bg-neutral-300 dark:bg-opacity-40">
+      <header className="m-auto mt-6 max-w-screen-2xl bg-white w-full bg-opacity-10 h-48 p-2 md:py-10 md:pt-14 lg:pr-24 rounded-t-lg flex justify-evenly items-center relative dark:bg-neutral-300 dark:bg-opacity-40">
         <Link to="/" className="text-white dark:text-neutral-900 material-symbols-outlined text-xl cursor-pointer absolute top-4 left-4 md:top-6 md:left-6 opacity-50 hover:scale-110">
           arrow_back_ios
         </Link>
         <h2 className={`animate-pulse-slow text-center w-1/2 ${market === 'EURONEXT' || market === 'NASDAQ' ? 'text-4xl' : 'text-6xl'} md:text-6xl text-white dark:text-neutral-900`}>{market}</h2>
-        <img src={stock} alt="stock" className="md:mr-20 animate-pulse-slow mt-10 w-40 md:w-64" />
+        <AiOutlineStock size={200} className="dark:text-neutral-800 animate-pulse-slow" />
       </header>
       <input
         type="text"
         placeholder="Filter by company name or symbol"
-        className="z-20 max-w-screen-2xl pt-4 w-full placeholder-shown:bg-neutral-500 p-2 focus:outline-none focus:bg-neutral-500 focus:text-white dark:text-neutral-900 dark:placeholder-neutral-900"
+        className="py-3 z-20 max-w-screen-2xl pt-4 w-full placeholder-shown:bg-neutral-500 p-2 focus:outline-none focus:bg-neutral-500 focus:text-white dark:text-neutral-900 dark:placeholder-neutral-900 dark:placeholder-shown:bg-neutral-300 dark:focus:bg-neutral-300"
         onChange={(e) => dispatch(filterStocks(e.target.value))}
       />
-      <ul className="z-10 w-full grid grid-cols-2 mt-6">
+      <ul className="z-10 w-full grid grid-cols-2">
         {filteredList.map((stock) => (
           <Link
             to="/stock"
