@@ -8,7 +8,7 @@ import Stock from './components/Stock';
 const App = () => {
   const x = 0;
   return (
-    <div id={x} className="App flex flex-col bg-neutral-900 min-h-screen items-center relative overflow-x-hidden">
+    <div id={x} className="App flex flex-col bg-neutral-900 dark:bg-slate-100 min-h-screen items-center relative overflow-x-hidden">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
