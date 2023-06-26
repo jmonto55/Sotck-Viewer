@@ -33,7 +33,7 @@ const Market = () => {
           expand_less
         </span>
       </button>
-      <header className="m-auto mt-6 max-w-screen-2xl bg-white w-full bg-opacity-10 h-48 p-2 md:py-10 md:pt-14 lg:pr-24 rounded-t-lg flex justify-evenly items-center relative dark:bg-neutral-300 dark:bg-opacity-40">
+      <header className="m-auto mt-3 max-w-screen-2xl bg-white w-full bg-opacity-10 h-48 p-2 md:py-10 md:pt-14 lg:pr-24 flex justify-evenly items-center relative dark:bg-neutral-300 dark:bg-opacity-40">
         <Link to="/" className="text-white dark:text-neutral-900 material-symbols-outlined text-xl cursor-pointer absolute top-4 left-4 md:top-6 md:left-6 opacity-50 hover:scale-110">
           arrow_back_ios
         </Link>

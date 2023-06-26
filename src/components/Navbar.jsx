@@ -92,7 +92,7 @@ const Navbar = () => {
           </li>
         </ul>
         {open && (
-        <button onClick={toggleOpen} type="button" className="z-10 md:hidden">
+        <button onClick={toggleOpen} type="button" className="mt-2 z-10 md:hidden">
           <span className="material-symbols-outlined">
             close
           </span>
